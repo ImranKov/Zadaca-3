@@ -16,5 +16,7 @@ programskiJezici.forEach(function (jezik) {
 const temp = ["1 kasikica soli", "2 kasike ulja", "300g Brasna", "200 ml mlijeka"];
 for (let i = 0; i < temp.length; i++) {
     const element = temp[i];
-    document.getElementById("sastojci").innerHTML = " " + temp;
+    let sastojciTemp = document.createElement("p");
+    sastojciTemp.innerHTML = temp[i];
+    document.getElementById("sastojci").appendChild(sastojciTemp);
 }
